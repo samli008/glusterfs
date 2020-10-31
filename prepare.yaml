@@ -1,3 +1,6 @@
+- name: copy_mfs_install_folder
+  copy: src=/root/glusterfs dest=/root
+
 - name: config local yum
   copy: src=/root/glusterfs.repo dest=/etc/yum.repos.d
 
