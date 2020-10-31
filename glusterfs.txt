@@ -36,6 +36,7 @@ gluster vol info
 
 # config client
 mount -t glusterfs node1:/vol1 /mnt
+mount -t glusterfs -o transport=rdma node1:/vol1 /mnt
 echo "node11:/vol1 /mnt glusterfs backupvolfile-server=node2,_netdev,defaults 0 0" >> /etc/fstab
 
 # add storage-domain on ovirt
