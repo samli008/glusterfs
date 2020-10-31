@@ -1,4 +1,4 @@
-- name: copy_mfs_install_folder
+- name: copy_glusterfs_install_dir
   copy: src=/root/glusterfs dest=/root
 
 - name: config local yum
