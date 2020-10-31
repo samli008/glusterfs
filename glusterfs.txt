@@ -1,7 +1,7 @@
 # install glusterfs on all nodes
-yum install centos-release-gluster -y
+yum install -y centos-release-gluster
 yum install -y glusterfs glusterfs-server glusterfs-fuse
-yum install glusterfs-rdma -y
+yum install -y glusterfs-rdma
 systemctl enable glusterd
 systemctl start glusterd
 
