@@ -29,10 +29,11 @@ gluster peer probe node3
 gluster peer status
 gluster vol create vol1 replica 3 node{1..3}:/gluster/brick1
 gluster vol create vol1 replica 3 transport rdma node{1..3}:/gluster/brick1
-gluster vol create vol1 disperse-data 2 redundancy 1 node{1..3}:/gluster1/brick1
+gluster vol create vol1 disperse-data 2 redundancy 1 node{1..3}:/gluster/brick1
 gluster vol list
 gluster vol start vol1
 gluster vol info
+gluster vol status
 
 # config client
 mount -t glusterfs node1:/vol1 /mnt
