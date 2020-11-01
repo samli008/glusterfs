@@ -35,6 +35,11 @@ gluster vol start vol1
 gluster vol info
 gluster vol status
 
+# add-brick
+gluster vol add-brick node{14..15}:/gluster/brick
+gluster vol rebalance vol1 start
+gluster vol rebalance vol1 status
+
 # config client
 mount -t glusterfs node1:/vol1 /mnt
 mount -t glusterfs -o transport=rdma node1:/vol1 /mnt
