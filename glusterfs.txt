@@ -36,7 +36,7 @@ gluster vol info
 gluster vol status
 
 # add-brick
-gluster vol add-brick node{14..15}:/gluster/brick
+gluster vol add-brick vol1 node{14..15}:/gluster/brick
 gluster vol rebalance vol1 start
 gluster vol rebalance vol1 status
 
